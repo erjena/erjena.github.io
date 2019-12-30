@@ -1,0 +1,125 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+</head>
+
+<body>
+  <div style="width: 1217px; height: 100%; margin: auto;">
+    <div class="smallGrid">
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+    </div>
+    <header class="mainHeader">
+      <div>
+        <div class="mainHeader1">
+          <a href="resume.html">Resume</a>
+        </div>
+        <div class="mainHeader2">
+          <a href="photos.html">Photography&Travel</a>
+        </div>
+      </div>
+    </header>
+    <div class="smallGrid">
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+    </div>
+    <div class="about">
+      <h1>Hi there!</h1>
+      <p style="font-size:20px;">
+        I'm Erzhena, a software engineer who specializes in JavaScript and loves to learn new technologies.
+        I have experience with React.js, HTML, CSS, Node.js, RESTful API, MySQL, PostgreSQL.
+        I'm also learning Go (Golang) and Python.
+      </p>
+      <p class="contact">
+        <i class="fa fa-linkedin-square"></i>
+        <a href="https://www.linkedin.com/in/erzhena-shirabon/" target="_blank">LinkedIn</a>
+        <i class="fa fa-github" aria-hidden="true" style="margin-left:45px;"></i>
+        <a href="https://github.com/erjena" target="_blank">Github</a>
+      </p>
+    </div>
+    <div>
+      <div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+      </div>
+      <div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+        <div class="staticball"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    anime({
+      targets: '.ball',
+      translateX: 764,
+      duration: 3000
+    });
+  </script>
+</body>
+
+</html>
+
+
+<!-- translateX: function (ball) {
+  return ball.getAttribute('data-x');
+},
+translateY: function (ball, i) {
+  return 50 + (-50 * i);
+},
+scale: function (ball, i, l) {
+  return (l - i) + .25;
+},
+rotate: function () { return anime.random(-360, 360); },
+borderRadius: function () { return ['50%', anime.random(10, 35) + '%']; },
+duration: function () { return anime.random(1200, 1800); },
+delay: function () { return anime.random(0, 400); },
+direction: 'alternate',
+loop: true -->
+
+
+<!-- // translateX: {
+  //   value: '*=2.5', // 100px * 2.5 = '250px'
+  //   duration: 1000
+  // },
+  // width: {
+  //   value: '-=40px', // 28 - 20 = '8px'
+  //   duration: 1800,
+  //   easing: 'easeInOutSine'
+  // },
+  // rotate: {
+  //   value: '-=2turn', // 0 + 2 = '2turn'
+  //   duration: 1800,
+  //   easing: 'easeInOutSine'
+  // },
+  // direction: 'alternate' -->
+
+<!-- 
+
+  // scale: currScale,
+  // scale: [
+  //   { value: .1, easing: 'easeOutSine', duration: 500 },
+  //   { value: 1, easing: 'easeInOutQuad', duration: 700 }
+  // ],
+  // delay: anime.stagger(200, { grid: [9, 4], from: 'first' }) -->

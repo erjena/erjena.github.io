@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="resumePage">
+    <h2 style="margin-bottom: 0px; display: inline-block;">Projects</h2>
+    <p style="display: inline-block;">(titles are clickable)</p>
+
+    <div>
+      <h3>
+        <a href="https://github.com/erjena/rss-reader" target="_blank" class="projectName">Go RSS Reader</a>
+      </h3>
+      <p class="techStack">
+        Tech stack: Go (Golang), Gorilla/mux, REST API, React JS, HTML, CSS, MySQL
+      </p>
+      <p class="description">
+        An RSS Reader with support of user sessions using HTTP cookies. The internal crawler indefinitely checks for the latest RSS updates, the process uses multithreading/concurrency. Fetched XML data is parsed and stored in the SQL database.
+      </p>
+      <p style="text-align: center;">
+        <img src="images/loginPage.png" width="635px" height="375px" class="projectPic">
+        <img src="images/mainPage.png" width="635px" height="375px" class="projectPic">
+      </p>
+
+    </div>
+    &nbsp;
+    <div>
+      <h3>
+        <a href="https://github.com/erjena/go-file-server" target="_blank" class="projectName">Go File Server</a>
+      </h3>
+      <p class="techStack">
+        Tech stack: Go (Golang), Gorilla/mux, REST API, JavaScript, React JS, Webpack, Babel, HTML, CSS
+      </p>
+      <p class="description">
+        A simple file server that supports essential operations such as listing directories, downloading and uploading files, renaming and deleting files/directories.
+      </p>
+      <p style="text-align: center;">
+        <img src="images/go_file.gif" width="395px" height="325px">
+      </p>
+    </div>
+    &nbsp;
+    <div>
+      <h3>
+        <a href="https://github.com/erjena/go-file-server" target="_blank" class="projectName">Restaurant Review App</a>
+      </h3>
+      <p class="techStack">
+        Tech stack: JavaScript, React JS, Node.js, NGINX, PostgreSQL, AWS EC2, k6, Loader.io, New Relic
+      </p>
+      <p class="description">
+        The app displays a short description of a chosen restaurant along with its location and various types of scores. 
+        The backend handles 1200 RPS while having 10,000,000 entries in the database. The app is horizontally scaled and deployed
+        to multiple AWS EC2 hosts.
+      </p>
+    </div>
+    &nbsp;
+    <div>
+      <h3>
+        <a href="https://github.com/hacker-home/More-homes" target="_blank" class="projectName">Vacation Rental</a>
+      </h3>
+      <p class="techStack">
+        Tech stack: JavaScript, React JS, Express.js, Node.js, Webpack, Babel, MySQL, AWS S3, AWS EC2
+      </p>
+      <p class="description">
+        A suggestion module for a vacation rental app that displays 12 more homes. Each picture is
+        clickable and redirects the user to the main page of the clicked house. The app is responsive to resizing.
+      </p>
+      <p style="text-align: center;">
+        <img width="745px" alt="modulePic"
+          src="https://user-images.githubusercontent.com/44889384/61908350-51395880-aee4-11e9-8ea9-36ea16ac8d98.png">
+      </p>
+    </div>
+    &nbsp;
+    <div>
+      <h3>
+        <a href="https://github.com/erjena/sudoku" target="_blank" class="projectName">Sudoku</a>
+      </h3>
+      <p class="techStack">
+        Tech stack: JavaScript, Express.js, Node.js, React JS, Webpack, Babel, MongoDB
+      </p>
+      <p class="description">
+        Classic sudoku game. A user can start a new game or load previously saved (into the database) game. The application checks for validity of user input and whether game is over.
+      </p>
+      <p style="text-align: center;">
+        <img width="395px" height="370px" style="margin-left:15%;"
+          src="https://user-images.githubusercontent.com/44889384/61984180-202a5800-afb8-11e9-9cdc-c74034a9b242.png">
+      </p>
+    </div>
+    &nbsp;
+    <div>
+      <h3>
+        <a href="https://github.com/erjena/py-file-server" target="_blank" class="projectName">Python File Server</a>
+      </h3>
+      <p class="techStack">
+        Tech stack: Python, Flask
+      </p>
+      <p class="description">
+        A simple file server operates via REST API. Supports list, upload and delete operations.
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
