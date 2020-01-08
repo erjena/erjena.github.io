@@ -7,14 +7,24 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Projects</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div class="resumePage">
-    <h2 style="margin-bottom: 0px; display: inline-block;">Projects</h2>
-    <p style="display: inline-block;">(titles are clickable)</p>
-
+  <div class="resumePage" style="width: 850px; height: 100%; margin: auto;">
+    <header class="resumeHeader">
+      <div class="resumeHeader_container">
+        <div class="pageName">
+          <h2 style="display: inline-block;">Projects</h2>
+          <p style="display: inline-block; font-size: 18px;">(titles are clickable)</p>
+        </div>
+        <div class="linkToPhotoPage">
+          <a href="photoAndTravel.html">Photography&Travel</a>
+        </div>
+        <div class="linkToMainPage">
+          <a href="index.html">Main page</a>
+        </div>
+      </div>
+    </header>
     <div>
       <h3>
         <a href="https://github.com/erjena/rss-reader" target="_blank" class="projectName">Go RSS Reader</a>
@@ -23,13 +33,15 @@
         Tech stack: Go (Golang), Gorilla/mux, REST API, React JS, HTML, CSS, MySQL
       </p>
       <p class="description">
-        An RSS Reader with support of user sessions using HTTP cookies. The internal crawler indefinitely checks for the latest RSS updates, the process uses multithreading/concurrency. Fetched XML data is parsed and stored in the SQL database.
+        An RSS Reader with support of user sessions using HTTP cookies. The internal crawler indefinitely checks for the
+        latest RSS updates, the process uses multithreading/concurrency. Fetched XML data is parsed and stored in the
+        SQL
+        database.
       </p>
       <p style="text-align: center;">
         <img src="images/loginPage.png" width="635px" height="375px" class="projectPic">
         <img src="images/mainPage.png" width="635px" height="375px" class="projectPic">
       </p>
-
     </div>
     &nbsp;
     <div>
@@ -40,7 +52,8 @@
         Tech stack: Go (Golang), Gorilla/mux, REST API, JavaScript, React JS, Webpack, Babel, HTML, CSS
       </p>
       <p class="description">
-        A simple file server that supports essential operations such as listing directories, downloading and uploading files, renaming and deleting files/directories.
+        A simple file server that supports essential operations such as listing directories, downloading and uploading
+        files, renaming and deleting files/directories.
       </p>
       <p style="text-align: center;">
         <img src="images/go_file.gif" width="395px" height="325px">
@@ -55,8 +68,9 @@
         Tech stack: JavaScript, React JS, Node.js, NGINX, PostgreSQL, AWS EC2, k6, Loader.io, New Relic
       </p>
       <p class="description">
-        The app displays a short description of a chosen restaurant along with its location and various types of scores. 
-        The backend handles 1200 RPS while having 10,000,000 entries in the database. The app is horizontally scaled and deployed
+        The app displays a short description of a chosen restaurant along with its location and various types of scores.
+        The backend handles 1200 RPS while having 10,000,000 entries in the database. The app is horizontally scaled and
+        deployed
         to multiple AWS EC2 hosts.
       </p>
     </div>
@@ -86,7 +100,8 @@
         Tech stack: JavaScript, Express.js, Node.js, React JS, Webpack, Babel, MongoDB
       </p>
       <p class="description">
-        Classic sudoku game. A user can start a new game or load previously saved (into the database) game. The application checks for validity of user input and whether game is over.
+        Classic sudoku game. A user can start a new game or load previously saved (into the database) game. The
+        application checks for validity of user input and whether game is over.
       </p>
       <p style="text-align: center;">
         <img width="395px" height="370px" style="margin-left:15%;"
@@ -106,6 +121,17 @@
       </p>
     </div>
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@0.2.3/dist/bubbly-bg.js"></script>
+  <script>bubbly();</script>
+  <script>
+    bubbly({
+      colorStart: "#1C1E27",
+      colorStop: "#1C1E27",
+      bubbles: 15,
+      bubbleFunc: () => `hsla(0, 90%, 0%, ${Math.random() * 0.1})`
+    })
+  </script>
 </body>
 
 </html>

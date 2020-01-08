@@ -91,15 +91,46 @@ i {
   width: 60%;
   font-size: 18px;
   padding-bottom: 70px;
+  z-index: 1;
+}
+
+.resumeHeader {
+  margin-top: 20px;
+  display: block;
+  color: #E0E0E1;
+  margin-bottom: 70px;
+}
+
+.resumeHeader_container {
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+.pageName {
+  float: left;
+  font-size: 22px;
+}
+
+.linkToMainPage {
+  padding-top: 45px;
+  display: block;
+  float: right;
+  margin-right: 30px;
+}
+
+.linkToPhotoPage {
+  padding-top: 45px;
+  display: block;
+  float: right;
 }
 
 .techStack {
-  color:#1E747B;
+  color: rgb(0, 212, 245);
   margin-bottom: 7px;
 }
 
 .projectName {
-  color: #F30050;
+  color: rgb(255, 0, 85);
 }
 
 .description {
